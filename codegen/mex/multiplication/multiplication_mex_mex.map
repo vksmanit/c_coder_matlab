@@ -1,0 +1,11 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		multiplication;
+		multiplication_initialize;
+		multiplication_terminate;
+		multiplication_atexit;
+	local:
+		*;
+};

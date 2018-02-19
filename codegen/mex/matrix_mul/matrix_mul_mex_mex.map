@@ -1,0 +1,11 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		matrix_mul;
+		matrix_mul_initialize;
+		matrix_mul_terminate;
+		matrix_mul_atexit;
+	local:
+		*;
+};

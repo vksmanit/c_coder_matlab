@@ -2,7 +2,7 @@
 ## Makefile generated for MATLAB file/project 'dot_product'. 
 ## 
 ## Makefile     : dot_product_rtw.mk
-## Generated on : Tue Feb 20 14:16:52 2018
+## Generated on : Tue Feb 20 14:21:22 2018
 ## MATLAB Coder version: 2.7 (R2014b)
 ## 
 ## Build Info:
@@ -189,7 +189,7 @@ DEFINES = $(DEFINES_STANDARD)
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/codegen/lib/dot_product/dot_product_initialize.c $(START_DIR)/codegen/lib/dot_product/dot_product_terminate.c $(START_DIR)/codegen/lib/dot_product/dot_product.c $(START_DIR)/codegen/lib/dot_product/rt_nonfinite.c $(START_DIR)/codegen/lib/dot_product/rtGetNaN.c $(START_DIR)/codegen/lib/dot_product/rtGetInf.c
+SRCS = $(START_DIR)/codegen/lib/dot_product/dot_product_initialize.c $(START_DIR)/codegen/lib/dot_product/dot_product_terminate.c $(START_DIR)/codegen/lib/dot_product/dot_product.c
 
 ALL_SRCS = $(SRCS)
 
@@ -197,7 +197,7 @@ ALL_SRCS = $(SRCS)
 ## OBJECTS
 ###########################################################################
 
-OBJS = dot_product_initialize.o dot_product_terminate.o dot_product.o rt_nonfinite.o rtGetNaN.o rtGetInf.o
+OBJS = dot_product_initialize.o dot_product_terminate.o dot_product.o
 
 ALL_OBJS = $(OBJS)
 

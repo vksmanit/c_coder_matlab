@@ -45,20 +45,14 @@ div.tooltip { visibility: hidden; position: fixed;
 <span class="td-line-number">    1   </span><span class="td-line-normal">gcc -c -ansi -pedantic -Wno-long-long -fwrapv -fPIC -O0 -DMODEL=dot_product -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I/home/vipinsoni/MTP/c_coder_matlab -I/home/vipinsoni/MTP/c_coder_matlab/codegen/lib/dot_product -I/opt/matlab/extern/include -I/opt/matlab/simulink/include -I/opt/matlab/rtw/c/src -I/opt/matlab/rtw/c/src/ext_mode/common -I/opt/matlab/rtw/c/ert -o "dot_product_initialize.o" "dot_product_initialize.c"</span>
 <span class="td-line-number">    2   </span><span class="td-line-normal">gcc -c -ansi -pedantic -Wno-long-long -fwrapv -fPIC -O0 -DMODEL=dot_product -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I/home/vipinsoni/MTP/c_coder_matlab -I/home/vipinsoni/MTP/c_coder_matlab/codegen/lib/dot_product -I/opt/matlab/extern/include -I/opt/matlab/simulink/include -I/opt/matlab/rtw/c/src -I/opt/matlab/rtw/c/src/ext_mode/common -I/opt/matlab/rtw/c/ert -o "dot_product_terminate.o" "dot_product_terminate.c"</span>
 <span class="td-line-number">    3   </span><span class="td-line-normal">gcc -c -ansi -pedantic -Wno-long-long -fwrapv -fPIC -O0 -DMODEL=dot_product -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I/home/vipinsoni/MTP/c_coder_matlab -I/home/vipinsoni/MTP/c_coder_matlab/codegen/lib/dot_product -I/opt/matlab/extern/include -I/opt/matlab/simulink/include -I/opt/matlab/rtw/c/src -I/opt/matlab/rtw/c/src/ext_mode/common -I/opt/matlab/rtw/c/ert -o "dot_product.o" "dot_product.c"</span>
-<span class="td-line-number">    4   </span><span class="td-line-normal">gcc -c -ansi -pedantic -Wno-long-long -fwrapv -fPIC -O0 -DMODEL=dot_product -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I/home/vipinsoni/MTP/c_coder_matlab -I/home/vipinsoni/MTP/c_coder_matlab/codegen/lib/dot_product -I/opt/matlab/extern/include -I/opt/matlab/simulink/include -I/opt/matlab/rtw/c/src -I/opt/matlab/rtw/c/src/ext_mode/common -I/opt/matlab/rtw/c/ert -o "rt_nonfinite.o" "rt_nonfinite.c"</span>
-<span class="td-line-number">    5   </span><span class="td-line-normal">gcc -c -ansi -pedantic -Wno-long-long -fwrapv -fPIC -O0 -DMODEL=dot_product -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I/home/vipinsoni/MTP/c_coder_matlab -I/home/vipinsoni/MTP/c_coder_matlab/codegen/lib/dot_product -I/opt/matlab/extern/include -I/opt/matlab/simulink/include -I/opt/matlab/rtw/c/src -I/opt/matlab/rtw/c/src/ext_mode/common -I/opt/matlab/rtw/c/ert -o "rtGetNaN.o" "rtGetNaN.c"</span>
-<span class="td-line-number">    6   </span><span class="td-line-normal">gcc -c -ansi -pedantic -Wno-long-long -fwrapv -fPIC -O0 -DMODEL=dot_product -DHAVESTDIO -DUSE_RTMODEL -DUNIX -I/home/vipinsoni/MTP/c_coder_matlab -I/home/vipinsoni/MTP/c_coder_matlab/codegen/lib/dot_product -I/opt/matlab/extern/include -I/opt/matlab/simulink/include -I/opt/matlab/rtw/c/src -I/opt/matlab/rtw/c/src/ext_mode/common -I/opt/matlab/rtw/c/ert -o "rtGetInf.o" "rtGetInf.c"</span>
-<span class="td-line-number">    7   </span><span class="td-line-normal">### Creating static library ./dot_product.a ...</span>
-<span class="td-line-number">    8   </span><span class="td-line-normal">ar ruvs  ./dot_product.a dot_product_initialize.o dot_product_terminate.o dot_product.o rt_nonfinite.o rtGetNaN.o rtGetInf.o</span>
-<span class="td-line-number">    9   </span><span class="td-line-normal">ar: creating ./dot_product.a</span>
-<span class="td-line-number">   10   </span><span class="td-line-normal">a - dot_product_initialize.o</span>
-<span class="td-line-number">   11   </span><span class="td-line-normal">a - dot_product_terminate.o</span>
-<span class="td-line-number">   12   </span><span class="td-line-normal">a - dot_product.o</span>
-<span class="td-line-number">   13   </span><span class="td-line-normal">a - rt_nonfinite.o</span>
-<span class="td-line-number">   14   </span><span class="td-line-normal">a - rtGetNaN.o</span>
-<span class="td-line-number">   15   </span><span class="td-line-normal">a - rtGetInf.o</span>
-<span class="td-line-number">   16   </span><span class="td-line-normal">### Created: ./dot_product.a</span>
-<span class="td-line-number">   17   </span><span class="td-line-normal">### Successfully generated all binary outputs.</span>
+<span class="td-line-number">    4   </span><span class="td-line-normal">### Creating static library ./dot_product.a ...</span>
+<span class="td-line-number">    5   </span><span class="td-line-normal">ar ruvs  ./dot_product.a dot_product_initialize.o dot_product_terminate.o dot_product.o</span>
+<span class="td-line-number">    6   </span><span class="td-line-normal">ar: creating ./dot_product.a</span>
+<span class="td-line-number">    7   </span><span class="td-line-normal">a - dot_product_initialize.o</span>
+<span class="td-line-number">    8   </span><span class="td-line-normal">a - dot_product_terminate.o</span>
+<span class="td-line-number">    9   </span><span class="td-line-normal">a - dot_product.o</span>
+<span class="td-line-number">   10   </span><span class="td-line-normal">### Created: ./dot_product.a</span>
+<span class="td-line-number">   11   </span><span class="td-line-normal">### Successfully generated all binary outputs.</span>
 </pre>
 </td></tr></table>
 </div>

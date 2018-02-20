@@ -1,0 +1,11 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		dot_product;
+		dot_product_initialize;
+		dot_product_terminate;
+		dot_product_atexit;
+	local:
+		*;
+};

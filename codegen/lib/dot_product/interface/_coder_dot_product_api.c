@@ -2,7 +2,7 @@
  * File: _coder_dot_product_api.c
  *
  * MATLAB Coder version            : 2.7
- * C/C++ source code generated on  : 20-Feb-2018 14:21:21
+ * C/C++ source code generated on  : 21-Feb-2018 09:41:54
  */
 
 /* Include Files */
@@ -13,7 +13,7 @@ static int32_T (*emlrt_marshallIn(const emlrtStack *sp, const mxArray *a, const
   char_T *identifier))[4];
 static int32_T (*b_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
   const emlrtMsgIdentifier *parentId))[4];
-static const mxArray *emlrt_marshallOut(const real_T u);
+static const mxArray *emlrt_marshallOut(const int32_T u);
 static int32_T (*c_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
   const emlrtMsgIdentifier *msgId))[4];
 
@@ -72,7 +72,7 @@ void dot_product_api(const mxArray *prhs[2], const mxArray *plhs[1])
 {
   int32_T (*a)[4];
   int32_T (*b)[4];
-  real_T out;
+  int32_T out;
   emlrtStack st = { NULL, NULL, NULL };
 
   st.tls = emlrtRootTLSGlobal;
@@ -123,15 +123,16 @@ static int32_T (*emlrt_marshallIn(const emlrtStack *sp, const mxArray *a, const
 }
 
 /*
- * Arguments    : const real_T u
+ * Arguments    : const int32_T u
  * Return Type  : const mxArray *
  */
-static const mxArray *emlrt_marshallOut(const real_T u)
+static const mxArray *emlrt_marshallOut(const int32_T u)
 {
   const mxArray *y;
   const mxArray *m0;
   y = NULL;
-  m0 = emlrtCreateDoubleScalar(u);
+  m0 = emlrtCreateNumericMatrix(1, 1, mxINT32_CLASS, mxREAL);
+  *(int32_T *)mxGetData(m0) = u;
   emlrtAssign(&y, m0);
   return y;
 }

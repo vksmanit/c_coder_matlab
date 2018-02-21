@@ -11,12 +11,13 @@
 #include "dot_product_mexutil.h"
 
 /* Function Definitions */
-const mxArray *emlrt_marshallOut(const real_T u)
+const mxArray *emlrt_marshallOut(const int32_T u)
 {
   const mxArray *y;
   const mxArray *m0;
   y = NULL;
-  m0 = emlrtCreateDoubleScalar(u);
+  m0 = emlrtCreateNumericMatrix(1, 1, mxINT32_CLASS, mxREAL);
+  *(int32_T *)mxGetData(m0) = u;
   emlrtAssign(&y, m0);
   return y;
 }

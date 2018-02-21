@@ -59,7 +59,7 @@ static int32_T (*emlrt_marshallIn(const emlrtStack *sp, const mxArray *a, const
 {
   int32_T (*a)[4];
   int32_T (*b)[4];
-  real_T out;
+  int32_T out;
   emlrtStack st = { NULL, NULL, NULL };
 
   st.tls = emlrtRootTLSGlobal;

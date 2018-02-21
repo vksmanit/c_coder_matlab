@@ -12,6 +12,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <string.h>
+#include "mwmathutil.h"
 #include "tmwtypes.h"
 #include "mex.h"
 #include "emlrt.h"
@@ -20,7 +21,7 @@
 #include "dot_product_types.h"
 
 /* Function Declarations */
-extern const mxArray *emlrt_marshallOut(const real_T u);
+extern const mxArray *emlrt_marshallOut(const int32_T u);
 
 #endif
 
